@@ -1,0 +1,30 @@
+{
+  "name": "screenshot-sample",
+  "version": "1.0.0",
+  "description": "Boiler point for react and server",
+  "main": "./src/server/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./src/server/app.js",
+    "server": "nodemon ./src/server/app.js",
+    "dev": "concurrently \"npm run server\"\"npm run client\""
+  },
+  "keywords": [],
+  "author": "Girmay",
+  "license": "ISC",
+  "dependencies": {
+    "chromium": "^2.1.1",
+    "concurrently": "^5.0.2",
+    "download-chromium": "^2.2.0",
+    "express": "^4.17.1",
+    "puppeteer": "^2.0.0",
+    "webshot": "^0.18.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/berheg"
+  }
+}
